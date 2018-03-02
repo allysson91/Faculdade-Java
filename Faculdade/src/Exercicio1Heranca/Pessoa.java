@@ -1,4 +1,4 @@
-package Herenca;
+package Exercicio1Heranca;
 
 public class Pessoa {
 
@@ -17,13 +17,13 @@ public class Pessoa {
 	}
 
 	public void setEndereco(String endereco) {
-		if (endereco.length() <= 80) {
-		this.endereco = endereco;
-	}else {
-		
-		throw new IllegalArgumentException("Endereço supera o limite");
-		
+		if (endereco.length() <= 10) {
+			this.endereco = endereco;
+		} else {
+
+			throw new IllegalArgumentException("Endereço supera o limite");
+
+		}
 	}
-	}
-	
+
 }
