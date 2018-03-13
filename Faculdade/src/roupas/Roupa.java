@@ -22,8 +22,6 @@ public abstract class Roupa {
 	public void lerDados() {
 	
 		Scanner scan = new Scanner(System.in);
-		String marca, cor, tamanho;
-		double preco;
 		System.out.println("Informar a marca: ");
 		marca = scan.nextLine();
 		System.out.println("Informar a cor: ");
