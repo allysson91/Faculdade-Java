@@ -21,16 +21,15 @@ public abstract class Animal {
 	
 	public void imprimir() {
 		
-		System.out.println("nome: "+this.nome);
-		System.out.println("Data nascimento: "+this.dataNascimento);
-		System.out.println("Cor: "+this.cor);
+		System.out.println("nome: "+getNome());
+		System.out.println("Data nascimento: "+getDataNascimento());
+		System.out.println("Cor: "+getCor());
 		
 	}
 	
 	public void lerDados() {
 		
 		Scanner scan = new Scanner(System.in);
-		String nome, dataNascimento, cor;
 		System.out.println("Informar o nome: ");
 		nome = scan.nextLine();
 		System.out.println("Informar a data de nascimento: ");
@@ -57,6 +56,11 @@ public abstract class Animal {
 	}
 	public void setCor(String cor) {
 		this.cor = cor;
+	}
+
+	@Override
+	public String toString() {
+		return "Animal [nome=" + nome + ", dataNascimento=" + dataNascimento + ", cor=" + cor + ", scan=" + scan + "]";
 	}
 	
 	

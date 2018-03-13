@@ -21,6 +21,7 @@ public class Cachorro extends Animal {
 		super.lerDados();
 		System.out.println("Informar o código pedigree: ");
 		codigoPedigree = scan.nextInt();
+	
 		System.out.println("Informar a raça: ");
 		raca = scan.nextLine();
 	}

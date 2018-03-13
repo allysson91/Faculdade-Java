@@ -25,8 +25,8 @@ public class Ave extends Animal{
 	
 	public void imprimir() {
 		super.imprimir();
-		System.out.println("Tipo de bico: "+this.tipoBico);
-		System.out.println("Estilo de voo: "+this.estiloVoo);
+		System.out.println("Tipo de bico: "+getTipoBico());
+		System.out.println("Estilo de voo: "+getEstiloVoo());
 		
 	}
 
@@ -41,6 +41,13 @@ public class Ave extends Animal{
 	}
 	public void setEstiloVoo(String estiloVoo) {
 		estiloVoo = estiloVoo;
+	}
+	@Override
+	public String toString() {
+		return "Ave [tipoBico=" + tipoBico + ", estiloVoo=" + estiloVoo + ", scan=" + scan + ", getTipoBico()="
+				+ getTipoBico() + ", getEstiloVoo()=" + getEstiloVoo() + ", getNome()=" + getNome()
+				+ ", getDataNascimento()=" + getDataNascimento() + ", getCor()=" + getCor() + ", toString()="
+				+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
 	}
 	
 	

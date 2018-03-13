@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 
 public class PrincipalAnimal {
+	static Animal ave = new Ave();
+	static	Animal cachorro = new Cachorro();
+	
 
 	public static void main(String[] args) {
 		int opcao;
@@ -20,23 +23,25 @@ public class PrincipalAnimal {
 			switch (opcao) {
 			case 1:
 
-				Animal ave = new Ave();
+				
 				cadastrarAnimal(ave);
 
 				break;
 
 			case 2:
 
-				Animal cachorro = new Cachorro();
+			
 				cadastrarAnimal(cachorro);
 				break;
 				
 			case 3:
 				
+				imprimirAnimal(ave);
+				break;
 				
-				Ave ave2 = new Ave();
+			case 4:
 				
-				ave2.imprimir();
+				imprimirAnimal(cachorro);
 				break;
 				
 			case 9:
@@ -55,6 +60,12 @@ public class PrincipalAnimal {
 		animal.lerDados();
 	
 		}
+	private static void imprimirAnimal(Animal animal) {
+
+		animal.imprimir();
+	
+		}
+	
 	}
 	
 
