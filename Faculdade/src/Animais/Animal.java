@@ -29,7 +29,6 @@ public abstract class Animal {
 	
 	public void lerDados() {
 		
-		Scanner scan = new Scanner(System.in);
 		System.out.println("Informar o nome: ");
 		nome = scan.nextLine();
 		System.out.println("Informar a data de nascimento: ");
